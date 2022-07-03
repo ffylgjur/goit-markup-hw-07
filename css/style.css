@@ -715,10 +715,10 @@ cursor: pointer;
 
 .card-description {
   padding: 20px 24px;
-  border: 1px solid var(--eighth-color);
-  border-top: none;
-background-color: var(--third-color);
-position: relative;
+    border: 1px solid var(--eighth-color);
+    border-top: none;
+    background-color: var(--third-color);
+    position: relative;
 
 }
 
