@@ -711,7 +711,7 @@ cursor: pointer;
   padding: 48px 24px;
  
 }
-
+/* ==KONIEC WYSUWANEJ KARTY=== */
 
 .card-description {
   padding: 20px 24px;
@@ -721,7 +721,7 @@ cursor: pointer;
     position: relative;
 
 }
-/* ==KONIEC WYSUWANEJ KARTY=== */
+
 
 
 .table-title {
