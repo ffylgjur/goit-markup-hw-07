@@ -572,9 +572,7 @@ footer > .container {
   width: 100%;
   height: 100%;
   background-color:rgba(0, 0, 0, 0.2);
-  animation: backdropAnimation;
-  animation-duration: 500ms;
-  animation-timing-function: linear;
+  
 }
 
 .modal {
@@ -588,7 +586,7 @@ footer > .container {
   min-height: 581px;
   animation: modalAnimation;
   animation-duration: 2000ms;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
   animation-iteration-count: 1;
   animation-direction: alternate;
 }
@@ -607,25 +605,39 @@ border-radius: 50%;
 fill:var(--main-color);
 cursor: pointer;
 }
+
 .is-hidden {
   opacity: 0;
   visibility:hidden;
   pointer-events: none;
-
+  transition: 300ms linear;
 }
+
 /* ===ANIMACJA MODAL==*/
 
-@keyframes backdropAnimation {
+/* @keyframes ishiddenAnimation {
   0% {
-    transform: opacity(0);
+    transform: opacity(1);
+    transform: visibility(visible);
   }
+  25% {
+    transform: opacity(0.75);
+    transform: visibility(visible);
+  }
+
   50% {
-    transform: opacity(0.2);
+    transform: opacity(0.5);
+    transform: visibility(visible);
+  }
+  75% {
+    transform: opacity(0.25);
+    transform: visibility(visible);
   }
   100% {
-    transform: opacity(1);
+    transform: opacity(0);
+    transform: visibility(visible);
   }
-}
+} */
 
 @keyframes modalAnimation  {
   0% {
@@ -640,7 +652,7 @@ cursor: pointer;
 }
 /* ===KONIEC ANIMACJI MODAL=== */
 
-/*===PORTFOLIO*===*/
+/*===PORTFOLIO===*/
 
 .filter {
   padding-bottom: 50px;
