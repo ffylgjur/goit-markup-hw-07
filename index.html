@@ -378,7 +378,23 @@
     
     
             </div>
-    
+    <div class="newsletter">
+
+            <form name="newsletter-form" autocomplete="on">
+                <h5 class="newsletter-header">Zapisz się do newslettera</h5>
+                <label class="newsletter-form-label">
+                    <div class="newsletter-container">
+                    <input type="e-mail" class="newsletter-input" id="newsletter-mail" name="e-mail" placeholder="E-mail" required> 
+                    
+                    <button type="submit" class="btn newsletter-btn" >Zapisz się <svg class="newsletter-icon">
+                        <use href="./images/icons.svg#icon-send"></use>
+                    </svg> </button>
+                    
+   
+                </div>
+                </label>
+        </form>
+    </div>
         </div>
        
     </footer>
@@ -389,46 +405,50 @@
             </svg>
            
             <form name="signup_form" autocomplete="off">
-                <p class="form-title">Zostaw swoje dane w formularzu poniżej</p>
-                    <label class="form-label form-mame">
+                <p class="form-header">Zostaw swoje dane w formularzu poniżej</p>
+                <label class="form-label form-name">
                     Imię
-                      <input type="name" name="name" class="form-input" minlength="3" />
-                      <svg class="form-icon">
+                    <input type="name" name="name" class="form-input newsletter-input" minlength="3" id="input.hover" required />
+                    <svg class="form-icon">
                         <use href="./images/icons.svg#icon-person-black"></use>
                     </svg>
                 </label>
-                   
-
-                    <label class="form-label">
-                        Email
-                        <input type="email" name="email" class="form-input" />
-                        <svg class="form-icon">
-                            <use href="./images/icons.svg#icon-email-black"></use>
-                        </svg>
+            
+            
+                <label class="form-label">
+                    Email
+                    <input type="email" name="email" class="form-input" required />
+                    <svg class="form-icon">
+                        <use href="./images/icons.svg#icon-email-black"></use>
+                    </svg>
+                </label>
+            
+                <label class="form-label">
+                    Telefon
+                    <input type="phone" name="phone" maxlength="9" class="form-input" />
+                    <svg class="form-icon">
+                        <use href="./images/icons.svg#icon-phone-black"></use>
+                    </svg>
+                </label>
+            
+                <label class="form-label">
+                    Komentarz
+                    <textarea name="feedback" placeholder="Wprowadź tekst" class="form-feedback" maxlength="9999"></textarea>
+                </label>
+                <div class="checkbox-policy">
+                    <input type="checkbox" id="check" class="checkbox-input visually-hidden" name="validation">
+                    <label for="check" class="checkbox-label">
+            
+                        <span class="validation-span"> Oświadczam, iż akceptuję
+                            <span> <a href="#" class="checkbox-span">Regulamin</a> i <a href="#" class="checkbox-span"> Politykę
+                                    prywatności </a></span>
+            
+                        </span>
                     </label>
-                  
-                    <label class="form-label">
-                        Telefon
-                        <input type="phone" name="phone" maxlength="9" class="form-input" />
-                        <svg class="form-icon">
-                            <use href="./images/icons.svg#icon-phone-black"></use>
-                        </svg>
-                    </label>
-                    
-                    <label class="form-label">
-                       Komentarz
-                       <textarea name="feedback" placeholder="Wprowadź tekst" class="form-feedback" maxlength="9999" ></textarea>
-                      </label>
-                      <div class="">
-                        <div>
-                            <label type="checkbox" class="checkbox-label-hidden" >
-                            <input type="checkbox" class= "form-checkbox" name="validation">
-              Oświadczam, iż akceptuję <span> <a href="#" class="checkbox-span">Regulamin</a> i <a href="#"  class="checkbox-span"> Politykę prywatnosci </a></span>
-                        </label>
-                        </div>
-                    <button type="submit" class=" btn btn-form" >Wyślij</button>
                 </div>
+                <button type="submit" class="btn btn-form">Wyślij</button>
             </form>
+            
 
         </div>
     </div>
