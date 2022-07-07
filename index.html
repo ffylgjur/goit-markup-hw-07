@@ -387,44 +387,46 @@
             <svg class="close-btn" data-modal-close>
                 <use href="./images/icons.svg#icon-close-button"></use>
             </svg>
-            <form name="signup_form" autocomplete="on" novalidate>
-                    <label>
+           
+            <form name="signup_form" autocomplete="off">
+                <p class="form-title">Zostaw swoje dane w formularzu poniżej</p>
+                    <label class="form-label form-mame">
                     Imię
-                      <input type="name" name="name" />
-                    </label>
-                    <svg class="form-icon">
-                    </svg>
+                      <input type="name" name="name" class="form-input" minlength="3" />
+                      <svg class="form-icon">
                         <use href="./images/icons.svg#icon-person-black"></use>
                     </svg>
+                </label>
+                   
 
-                    <label>
+                    <label class="form-label">
                         Email
-                        <input type="email" name="email" />
-                      </label>
-                    <svg class="form-icon">
-                    <use href="./images/icons.svg#icon-email-black"></use>
-                </svg>
-                    <label>
+                        <input type="email" name="email" class="form-input" />
+                        <svg class="form-icon">
+                            <use href="./images/icons.svg#icon-email-black"></use>
+                        </svg>
+                    </label>
+                  
+                    <label class="form-label">
                         Telefon
-                        <input type="number" name="phone" />
-                      </label>
-                    <svg class="form-icon">
-                    <use href="./images/icons.svg#icon-phone-black"></use>
-                </svg>
-                    <label>
+                        <input type="phone" name="phone" maxlength="9" class="form-input" />
+                        <svg class="form-icon">
+                            <use href="./images/icons.svg#icon-phone-black"></use>
+                        </svg>
+                    </label>
+                    
+                    <label class="form-label">
                        Komentarz
-                       <textarea name="feedback" rows="5" placeholder="Wprowadź tekst"></textarea>
+                       <textarea name="feedback" placeholder="Wprowadź tekst" class="form-feedback" maxlength="9999" ></textarea>
                       </label>
-                      <div>
+                      <div class="">
                         <div>
-                            <label type="checbox" class= "form-input" name="validation"></label>
-                            <svg class="'checobox-icon">
-                                <use href="./images/icons.svg#icon-icon-notfill"></use>
-                            </svg> 
-                            Oświadczam, iż akceptuję <span> <a href="#">Regulamin</a> i <a href="#"> Politykę prywatnosci </a></span>
-     
+                            <label type="checkbox" class="checkbox-label-hidden" >
+                            <input type="checkbox" class= "form-checkbox" name="validation">
+              Oświadczam, iż akceptuję <span> <a href="#" class="checkbox-span">Regulamin</a> i <a href="#"  class="checkbox-span"> Politykę prywatnosci </a></span>
+                        </label>
                         </div>
-                    <button type="submit">Wyślij</button>
+                    <button type="submit" class=" btn btn-form" >Wyślij</button>
                 </div>
             </form>
 

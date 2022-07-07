@@ -586,6 +586,7 @@ footer > .container {
   background-color: var(--third-color);
   width: 528px;
   min-height: 581px;
+  padding: 40px 40px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -614,6 +615,133 @@ cursor: pointer;
 }
 
 /* ===KONIEC ANIMACJI MODAL=== */
+ /* ===FORMULARZ=== */
+
+ .form-title {
+  display: block;
+  margin-bottom: 12px;
+ }
+.form-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 4px;
+
+}
+
+form {
+display: flex;
+flex-direction: column;
+padding: auto;
+};
+
+.signup_form {
+
+}
+
+.form-icon {
+  position: absolute;
+  display: block;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-30%);
+  left: 12px;
+  fill: var(--main-color);
+ 
+}
+.form-label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: var(--fifth-color);
+
+}
+
+.form-mame{
+ 
+}
+
+.form-input {  
+ 
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding-left: 42px;
+  margin-top: 4px;
+
+}
+
+.form-feedback {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 12px;
+height: 120px;
+width: 100%;
+padding: 12px 16px;
+margin-top: 4px;
+resize: none;  
+border: 1px solid rgba(33, 33, 33, 0.2);
+color: rgba(117, 117, 117, 0.5);
+
+}
+
+
+
+.form-checkbox{
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+}
+.checkbox-span {
+  color: var(--fourth-color);
+  text-decoration: underline;
+}
+
+.btn-form {
+  display: block;
+  margin-top:30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: var(--fourth-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  fill: solid;
+  color: var(--third-color)
+}
+
+.checkbox-label-hidden input{
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;}
+
+.form-checkbox:checked + .form-label::before {
+  content: '';
+  color: #2196f3;
+}
 
 /*===PORTFOLIO===*/
 
