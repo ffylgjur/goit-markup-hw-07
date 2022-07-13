@@ -1,0 +1,46 @@
+
+.hero .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px;
+  }
+  
+  .main-header {
+    font-family: var(--main-font);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.363;
+    text-transform: uppercase;
+    text-align: center;
+  
+    /* or 136% */
+  
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--third-color);
+    /* padding-top: 200px;  */
+    width: 696px;
+    /* margin-left: auto;
+      margin-right: auto; */
+  }
+  
+  .hero {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--sixth-color);
+    height: 600px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    max-width: 1600px;
+    width: 100%;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/lmg.jpg");
+    /* background-repeat: no-repeat;
+      background-position: 50%; */
+  }

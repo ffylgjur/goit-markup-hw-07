@@ -1,0 +1,59 @@
+.footer {
+    background-color: var(--sixth-color);
+    color: var(--third-color);
+    height: 252px;
+    padding: 60px 0px;
+  }
+  
+  .footer-logo {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--third-color);
+  }
+  
+  .footer-ad-info-list {
+    list-style: none;
+    margin-top: 20px;
+    display: block;
+  }
+  
+  .footer-address {
+    display: block;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    margin-bottom: 3px;
+    transition: color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .footer-contacts {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    margin: 10px 0;
+    transition: color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .footer-address:hover,
+  .footer-address:focus,
+  .footer-contacts:hover,
+  .footer-contacts:focus {
+    color: var(--fourth-color);
+  }
+  /*===FOOTER ICONS===*/
+  footer > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 0px;
+  }
+  
