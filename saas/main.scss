@@ -2,32 +2,28 @@
 @import "../saas/utils/_reset";
 @import "../saas/utils/_mixin";
 
-@import"../saas/base/_container.scss";
-@import"../saas/base/_logo.scss";
+@import"../saas/base/_container";
+@import"../saas/base/_logo";
 
-@import"../saas/base/_container.scss";
-@import"../saas/components/_backdrop.scss";
-@import"../saas/base/_section.scss";
-@import"../saas/components/_logo.scss";
-@import"../saas/components/_modal-btn.scss";
-@import"../saas/components/_modal.scss";
-@import"../saas/components/_navigation.scss";
-@import"../saas/components/_visually-hidden.scss";
+@import"../saas/base/_container";
+@import"../saas/components/_backdrop";
+@import"../saas/base/_section";
+@import"../saas/components/_logo";
+@import"../saas/components/_modal-btn";
+@import"../saas/components/_modal";
+@import"../saas/components/_navigation";
+@import"../saas/components/_visually-hidden";
 
-@import"..s/aas/layout/_clients.scss";
-@import"../saas/layout/_about.scss";
-@import"../saas/layout/_footer.scss";
-@import"../saas/layout/_form-singup.scss";
-@import"../saas/layout/_header.scss";
-@import"../saas/layout/_hero.scss";
-@import"../saas/layout/_join.scss";
-@import"../saas/layout/_newsletter.scss";
-@import"../saas/layout/_team.scss";
+@import"..s/aas/layout/_clients";
+@import"../saas/layout/_about";
+@import"../saas/layout/_footer";
+@import"../saas/layout/_form-singup";
+@import"../saas/layout/_header";
+@import"../saas/layout/_hero";
+@import"../saas/layout/_join";
+@import"../saas/layout/_newsletter";
+@import"../saas/layout/_team";
 
-@import"../saas/pages(portfolio)/_filter.scss";
-@import"../saas/pages(portfolio)/_overlay-card.scss";
-@import"../saas/pages(portfolio)/_table.scss";
-
-@import"../saas/utils/_mixin.scss";
-@import"../saas/utils/_reset.scss";
-@import"../saas/utils/_variables.scss";
+@import"../saas/pages(portfolio)/_filter";
+@import"../saas/pages(portfolio)/_overlay-card";
+@import"../saas/pages(portfolio)/_table";
