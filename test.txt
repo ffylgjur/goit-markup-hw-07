@@ -1,0 +1,28 @@
+@import "./utils/variables";
+@import "./utils/reset";
+@import "./utils/mixin";
+
+
+@import"./components/_backdrop.scss";
+@import"./base/_section";
+@import"./saas/components/_logo.scss";
+@import"./saas/components/_modal-btn";
+@import"./saas/components/_modal";
+@import"./saas/components/_navigation";
+@import"./saas/components/_visually-hidden";
+
+@import"./layout/_clients";
+@import"./layout/_about";
+@import"./layout/_footer";
+@import"./layout/_form-singup";
+@import"./layout/header";
+@import"./layout/_hero";
+@import"./layout/join";
+@import"./layout/_newsletter";
+@import"./layout/_team";
+
+@import"./pages(portfolio)/_filter";
+@import"./pages(portfolio)/_overlay-card";
+@import"./pages(portfolio)/_table";
+
+@import ".\saas\components\_backdrop.scss";
