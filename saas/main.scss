@@ -1,0 +1,27 @@
+@import "./base/basesettings";
+@import "./base/container";
+@import "./base/section";
+
+@import "./components/backdrop";
+@import "./components/logo";
+@import "./components/modal-btn";
+@import "./components/modal";
+@import "./components/navigation";
+@import "./components/visually-hidden";
+
+@import "./layout/about";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/form-singup";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/join";
+@import "./layout/newsletter";
+@import "./layout/team";
+
+@import "./pages/filter";
+@import "./pages/overlay-card";
+@import "./pages/table";
+
+@import "./utils/mixin";
+@import "./utils/variables"; 
