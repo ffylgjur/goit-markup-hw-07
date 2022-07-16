@@ -6,21 +6,135 @@
     align-items: flex-start;
     list-style: none;
   }
+  // ...próba....
+
+  .table-card{
+    margin-bottom: 30px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background: $third-color;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+  }
+  .table-card:nth-child(-n + 6) {
+    margin-bottom: 30px;
+  } 
+
+  .table-card-image{
+    width: 370px;
+    height: 294px;
+  }
+
+  .table-card:hover,
+  .table-card:focus{
   
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  }
+ 
+  .table-card-overlay{
+    display: flex;
+    position: absolute;
+    top: 0;
+    background-color: rgba(33,150,243,0.9);
+    height: 294px;
+    padding-left: 24px;
+    padding-right: 45px;
+    transform: translateY(294px);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+ .table-card:hover .table-card-overlay{
+    transform: translateY(0)
+  }
+.card-image{
+  width: 370px;
+  height: 294px;
+}
+.table-card-card-overlay-description {
+  
+    font-size: 18px;
+    line-height: 1.56;
+    color: $third-color;
+    letter-spacing: 0.03em;
+    margin: 0;
+    padding: 48px 24px;
+   
+  }
+
+.table-wrapper {
+  padding: 20px 24px;
+    border: 1px solid $eighth-color;
+    border-top: none;
+    background-color: $third-color;
+    position: relative;
+  
+}
+.card-overlay{
+  display: flex;
+    position: relative;
+    overflow: hidden;
+    position: absolute;
+    background-color: rgba(33, 150, 243, 0.9);
+    height: 294px;
+    padding-left: 24px;
+    padding-right: 45px;
+    top: 0;
+    // left: 0;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.table-item:hover .card-overlay{
+  transform: translateY(0)
+}
+  // .....
+
+  
+  .card:hover .overlay {
+    transform: translateY(0)
+  }
+  
+  .overlay-descritpion {
+    font-size: 18px;
+    line-height: 1.56;
+    color: $third-color;
+    letter-spacing: 0.03em;
+    margin: 0;
+    padding: 48px 24px;
+   
+  }
+
+  // ...próba
+  .overlay{
+    position: absolute;
+    background-color: rgba(33, 150, 243, 0.9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
   .card:nth-child(-n + 6) {
     margin-bottom: 30px;
   } 
   
   .card{
-    display: block;
+    // display: flex;
     position: relative;
     overflow: hidden;
-   
+    
   }
   
+
   .table-item {
-    background: var(--third-color);
+    background: $third-color;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 370px;
   }
   .table-item:hover,
   .table-item:focus{
@@ -28,16 +142,16 @@
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
   }
-  /* ===WYSUWAJĄCA SIĘ KARTA=== */
-  
-  /* ==KONIEC WYSUWANEJ KARTY=== */
+ 
   
   .card-description {
+    padding-left: 24px;
     padding: 20px 24px;
-      border: 1px solid var(--eighth-color);
+      border: 1px solid $eighth-color;
       border-top: none;
-      background-color: var(--third-color);
+      background-color: $third-color;
       position: relative;
+    
   
   }
   
@@ -55,5 +169,5 @@
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
-    color: var(--secondary-color);
+    color: $secondary-color;
   }

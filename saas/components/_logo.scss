@@ -1,5 +1,5 @@
 .logo {
-    font-family: --secondary-font;
+    font-family: var(--secondary-font);
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
@@ -12,6 +12,6 @@
   }
   
   .studio {
-    color: --fourth-color;
+    color: var(--fourth-color);
   }
   
