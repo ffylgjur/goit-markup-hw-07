@@ -1,3 +1,6 @@
+@import "./utils/mixin";
+@import "./utils/variables";
+
 @import "./base/basesettings";
 @import "./base/container";
 @import "./base/section";
@@ -20,10 +23,7 @@
 @import "./layout/team";
 
 @import "./pages/filter";
-@import "./pages/overlay-card";
 @import "./pages/table";
 
-@import "./utils/mixin";
-@import "./utils/variables";
 
 
